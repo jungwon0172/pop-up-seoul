@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://DOMAIN/index.html</loc></url>
-  <url><loc>https://DOMAIN/exhibitions.html</loc></url>
-  <url><loc>https://DOMAIN/popups.html</loc></url>
-  <url><loc>https://DOMAIN/free.html</loc></url>
-  <url><loc>https://DOMAIN/about.html</loc></url>
-  <url><loc>https://DOMAIN/contact.html</loc></url>
-  <url><loc>https://DOMAIN/privacy.html</loc></url>
-  <url><loc>https://DOMAIN/terms.html</loc></url>
+  <url><loc>https://pop-up-seoul.vercel.app/index.html</loc></url>
+  <url><loc>https://pop-up-seoul.vercel.app/exhibitions.html</loc></url>
+  <url><loc>https://pop-up-seoul.vercel.app/popups.html</loc></url>
+  <url><loc>https://pop-up-seoul.vercel.app/free.html</loc></url>
+  <url><loc>https://pop-up-seoul.vercel.app/about.html</loc></url>
+  <url><loc>https://pop-up-seoul.vercel.app/contact.html</loc></url>
+  <url><loc>https://pop-up-seoul.vercel.app/privacy.html</loc></url>
+  <url><loc>https://pop-up-seoul.vercel.app/terms.html</loc></url>
 </urlset>

@@ -30,14 +30,12 @@
 
   function applyFilters() {
     var cards = grid.querySelectorAll('.ticket');
-    var visibleCount = 0;
     cards.forEach(function (card) {
       var matchCat = state.category === 'all' || card.dataset.category === state.category;
       var matchArea = state.area === 'all' || card.dataset.area === state.area;
       var matchFree = !state.free || card.dataset.free === 'True';
       var show = matchCat && matchArea && matchFree;
       card.style.display = show ? '' : 'none';
-      if (show) visibleCount++;
     });
   }
 
