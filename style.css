@@ -40,20 +40,28 @@ a { color: inherit; }
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line-soft);
 }
-.header-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; height: 56px; }
 .logo {
   font-family: var(--font-display);
   font-size: 20px; font-weight: 700; text-decoration: none; color: var(--text);
   display: flex; align-items: center; gap: 8px;
 }
 .logo-mark { color: var(--amber); font-size: 10px; }
-.main-nav { display: flex; gap: 28px; }
-.main-nav a { text-decoration: none; color: var(--text-dim); font-size: 14px; letter-spacing: 0.02em; transition: color 0.15s; }
-.main-nav a:hover { color: var(--amber); }
 
-/* ===== Top-right ad (unified placement) ===== */
-.ad-top-row { display: flex; justify-content: flex-end; padding-top: 14px; }
-.ad-slot-corner { width: 300px; max-width: 100%; min-height: 100px; }
+/* 헤더 오른쪽 상단: 소개·문의 링크 전용 */
+.header-right { display: flex; align-items: center; gap: 6px; font-size: 13px; }
+.header-right a { text-decoration: none; color: var(--text-dim); transition: color 0.15s; }
+.header-right a:hover { color: var(--amber); }
+.header-right-sep { color: var(--text-mute); }
+
+/* 카테고리 서브내비 (헤더 아래 별도 줄) */
+.subnav { display: flex; gap: 24px; padding: 10px 24px; border-top: 1px solid var(--line-soft); }
+.subnav a { text-decoration: none; color: var(--text-dim); font-size: 14px; letter-spacing: 0.02em; transition: color 0.15s; }
+.subnav a:hover { color: var(--amber); }
+
+/* ===== Bottom ad (unified placement) ===== */
+.ad-bottom-row { padding: 8px 24px 40px; }
+.ad-slot-bottom { max-width: var(--wrap); margin: 0 auto; min-height: 100px; }
 
 /* ===== Hero ===== */
 .hero {
@@ -76,7 +84,7 @@ a { color: inherit; }
 
 /* ===== Filter bar ===== */
 .filter-bar {
-  position: sticky; top: 64px; z-index: 30;
+  position: sticky; top: 96px; z-index: 30;
   background: var(--bg);
   border-bottom: 1px solid var(--line-soft);
   padding: 14px 0;
@@ -209,12 +217,10 @@ a { color: inherit; }
 
 /* ===== Responsive ===== */
 @media (max-width: 640px) {
-  .main-nav { gap: 16px; }
-  .header-inner { height: 56px; }
-  .ad-top-row { justify-content: center; padding-top: 10px; }
-  .ad-slot-corner { width: 100%; max-width: 320px; }
+  .subnav { gap: 16px; padding: 8px 16px; }
+  .header-inner { height: 52px; }
   .hero { padding: 40px 0 28px; }
-  .filter-bar { top: 56px; }
+  .filter-bar { top: 88px; }
   .chip-toggle { margin-left: 0; }
   .footer-inner { flex-direction: column; }
 }

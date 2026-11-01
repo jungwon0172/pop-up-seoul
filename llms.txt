@@ -1,0 +1,17 @@
+# 오프닝, 서울
+> 서울에서 지금 열리는 것들
+
+오프닝, 서울은 서울에서 지금 진행중이거나 곧 열리는 전시회와 팝업스토어 일정을 모아 소개하는 정보 사이트입니다.
+모든 일정은 공개된 뉴스 기사, 공식 인스타그램, 기관/백화점 공식 페이지 등 확인 가능한 출처를 바탕으로 작성되며,
+각 일정의 정확한 가격·예약 여부는 출처 링크에서 재확인해야 합니다.
+
+## 주요 페이지
+- [전체 일정](https://pop-up-seoul.vercel.app/index.html): 서울 전역의 진행중·오픈예정 전시·팝업 전체 목록
+- [전시](https://pop-up-seoul.vercel.app/exhibitions.html): 갤러리·미술관 전시만 모은 목록
+- [팝업](https://pop-up-seoul.vercel.app/popups.html): 브랜드·캐릭터 팝업스토어만 모은 목록
+- [무료](https://pop-up-seoul.vercel.app/free.html): 무료 입장 전시·팝업만 모은 목록
+- [소개](https://pop-up-seoul.vercel.app/about.html): 사이트 운영 방식과 출처 정책
+
+## 데이터 구조
+각 일정은 이름, 카테고리(전시/팝업), 서울 자치구, 기간, 장소, 무료 여부, 출처 링크를 포함합니다.
+구조화 데이터는 각 페이지의 JSON-LD(schema.org Event)로 제공됩니다.
